@@ -4,7 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 script {
-                    println("Test")
+                    println(env.BRANCH_NAME)
                 }
             }
         }
