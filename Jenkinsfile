@@ -5,6 +5,15 @@ pipeline {
             steps {
                 script {
                     println(env.BRANCH_NAME)
+                
+                }
+            }
+        }
+        stage('Stage 2') {
+            steps {
+                script {
+                    println("2")
+                
                 }
             }
         }
